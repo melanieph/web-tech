@@ -8,38 +8,34 @@
       <title> Aufgabe 5 </title>
 
 
-    <?php function zufzahl ($max, $anzahl, $stellen=5)
-    {   
-        
-        echo "<table class='table table-bordered'>";
-        echo "<tbody>";
-        for($i=0; $i<=$stellen; $i++)
-        {
-            $zzahl = rand(1, $max);
-            $gerundet1 = abschneiden($zzahl,$stellen);
-            $gerundet2= abschneiden($zzahl,$stellen-1);
-            $gerundet3=abschneiden($zzahl,stellen-2);
-
-            echo "<tr><td>$zzahl</tr></td> <tr><td>$gerundet1</tr></td><tr><td>$gerundet2</tr></td> <tr><td>$gerundet3</tr></td>  <br/>";
-        }
-        echo "</tbody></table>";
-    ?>
     <?php
-        function abschneiden ($zahl, $stellen=2)
-        {
-            echo "<table class='table table-bordered'>";
-            echo "<tbody>";
-            $base = pow(10, $stellen);
-            return $zahl - ($zahl % base);
+      function zufzahl($max, $anzahl, $stellenn){
+        echo "<table>";
+        echo "<thead><th>Zufallszahlen</th><th>erste Stelle</th><th>ersten 2 Stellen</th><th>ersten 3 Stellen</th><th>ersten 4 Stellen</th></thead>";
+        echo "<tbody>";
+
+        for ($i=1; $i<=$anzahl ; $i++) {
+
+            $zzahl = rand(1,$max);
+            $gerundet1 = abschneiden($zzahl,$stellenn);
+            $gerundet2 = abschneiden($zzahl,$stellenn-1);
+            $gerundet3 = abschneiden($zzahl,$stellenn-2);
+            $gerundet4 = abschneiden($zzahl,$stellenn-3);
+            echo "<tr><td>$zzahl</td><td>$gerundet1</td><td>$gerundet2</td><td>$gerundet3</td><td>$gerundet4</td></tr><br/>";
         }
-    }
-    echo "</tbody></table>";
-    ?>
+         echo "</tbody></table>";
+      }
 
+      function abschneiden($zahl,$stellen=2){
+            $base = pow(10,$stellen);
+            return $zahl - ($zahl % $base);
+      }
+       ?>
 
-    <style>
-        body{
-         background-color: #f1fcff
+       <style>
+
+       body{
+         background-color: #0489B1;
        }
 
 
@@ -50,7 +46,7 @@
        }
 
        header {
-         background-color: #FFAEB9;
+         background-color: #81BEF7
        }
 
        table {
@@ -65,31 +61,33 @@
        }
 
        th {
-         background-color: #f7e2ff;
+         background-color: #81BEF7;
        }
 
        td {
-         background-color: #C0C0C0;
+         background-color: #81BEF7;
        }
 
        footer {
          text-align: center;
-         font-family: cursive;
-         background-color: #CD8C95;
+         background-color: #D8D8D8;
 
        }
 
+       </style>
 
 
+   </head>
+   <header>
+     <div class="container">
+     <h1> Zufallszahlen</h1>
+   </div>
+   </header>
+   <body>
+      <div class="container">
+        <?php zufzahl(20000, 20, 4); ?>
+      </div>
 
-    </style>
-    </head>
-    <body>
-    <h1>Zufallszahlen</h1>
-    <div>
-        <?php zufzahl(20000, 20); ?>
-    </div>
-    </body>
-
-    <footer> <i>Melanie Hoffmann</i></footer>
-</html>
+   </body><br>
+    <footer> Melanie Hoffmann</footer>
+    </html>

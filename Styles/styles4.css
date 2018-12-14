@@ -1,14 +1,80 @@
 
+@charset "ISO-8859-1";
+
+
+@media screen and (min-width: 720px){
+
 body{
  background-color: #FF5F00; /* HTW-orange */
  font-size:1rem;
+ font-family: 'Times New Roman', sans-serif;
+ 
+}
+#oben {
+    background-color: #307073;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 20px;
+  }
+  #links{
+    background-color: #FFAEB9;
+    color: white;
+    padding: 20px;
+    flex: 1;
+  }
+  #rechts {
+    background-color: #CD8C95;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    flex: 2;
+  }
+  #mitte {
+    background-color:#F3B78F;
+    padding: 20px;
+    flex: 4;
+  }
+  #unten {
+    background-color: #307073;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .flex-container{
+  display: flex;
+	background-color: #AFAFAF;
+  }
 }
 
-
-
-@media screen and (min-width: 480px) {
  body {
  background-color: #0082D1; /* HTW-blau */
  font-size:1.2rem;
  }
+
+
+ #oben {
+  background-color: #307073;
+ 
 }
+#links{
+  background-color: #FFAEB9;
+  color: white;
+  
+}
+#rechts {
+  background-color: rgb(109, 66, 72);
+  color: white;
+  
+}
+#mitte {
+  background-color:rgb(170, 143, 125);
+  
+}
+#unten {
+  background-color: #307073;
+  color: white;
+  
+}
+
+
