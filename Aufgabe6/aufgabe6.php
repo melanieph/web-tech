@@ -16,18 +16,19 @@ $file = @fopen ( "./mockdatatext", "r" );
 if (! $file) {
     echo "Es ist ein Problem beim Öffnen der Datei 'mockupdatatext' aufgetreten.";
 } else {
-    
+
     echo "<div class='row'>";
     $counter=0;
     while ( ! feof ( $file ) ) {
-      
-        if ($counter%10==0){
 
-            echo "<div class='col-xl-6 col-lg-6 col-md-12' style='background-color:dimgray; margin-top:10px; margin-bottom:10px;'>";  
+        if ($counter%10==0)
+        {
+
+            echo "<div class='col-xl-6 col-lg-6 col-md-12' style='background-color:dimgray; margin-top:10px; margin-bottom:10px;'>";
             echo "<ul class='list-group' style='padding:10px;'>";
         }
 
-        
+
         $vorname=fgets($file);
         $nachname=fgets($file);
         $email=fgets($file);

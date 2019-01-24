@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+
+    <!-- <script src="aufgabe9.js"></script> -->
+    <title>Aufgabe9</title>
+    <style>
+
+            #demo {
+              width: 200px;
+              height: 200px;
+              background-color: red;
+        
+            }
+
+            #demo2{
+                
+
+            }
+            #div2{
+
+            }
+
+            
+        
+            
+        
+    </style>
+</head>
+<body>
+    <h1>Mausereignisse behandeln mit JavaScript</h1>
+    <div id="demo" 
+        onclick="changeColor('green');"
+        ondblclick="insertText('Doppelklick');"
+        onmouseenter ="gettinBigger('bigger');"
+        onmouseleave="gettingSmaller('smaller');"
+    ></div>
+
+    <h2>Tastaturerignisse behandeln mit JavaScript</h2>
+    <input id="demo2"
+        onfocus="document.getElementById('demo2').style.backgroundColor='lightblue';"
+        onblur="document.getElementById('demo2').style.backgroundColor='white';"
+        onkeyup="keyInput();"
+    />
+    <div id="div2" style="padding-top:20px; font-weight:bold;"></div>
+
+    
+        
+
+<script>
+    function changeColor(col){
+    document.getElementById('demo').style.backgroundColor = col;
+    }
+
+    function insertText(text) {
+      var div = document.getElementById('demo');
+      div.innerHTML = text;
+      div.style.textAlign = 'center';
+      div.style.color = 'white';
+      div.style.lineHeight = '200px';
+    }
+
+    function gettinBigger(bigger){
+        var div = document.getElementById('demo');
+        if(bigger){
+            div.style.height='300px';
+            div.style.width='300px';
+        }
+
+    }
+    function gettingSmaller(smaller){
+        var div = document.getElementById('demo');
+        if(smaller){
+            div.style.height='200px';
+            div.style.width='200px';
+        }
+    }
+
+    function keyInput(){
+        var input=document.getElementById('demo2').value;
+        
+        document.getElementById('div2').innerHTML=input;
+
+        }
+    
+        
+    
+    </script>
+    
+    
+</body>
+</html>

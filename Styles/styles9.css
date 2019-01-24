@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+body{
+    background-color: azure;
+}
+
+div
+{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}

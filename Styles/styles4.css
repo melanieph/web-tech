@@ -1,80 +1,80 @@
 
-@charset "ISO-8859-1";
 
 
-@media screen and (min-width: 720px){
 
-body{
- background-color: #FF5F00; /* HTW-orange */
- font-size:1rem;
- font-family: 'Times New Roman', sans-serif;
- 
-}
-#oben {
-    background-color: #307073;
-    padding: 20px;
-    margin: 10px;
-    margin-top: 20px;
-  }
-  #links{
-    background-color: #FFAEB9;
-    color: white;
-    padding: 20px;
-    flex: 1;
-  }
-  #rechts {
-    background-color: #CD8C95;
-    color: white;
-    padding: 20px;
-    margin-bottom: 10px;
-    flex: 2;
-  }
-  #mitte {
-    background-color:#F3B78F;
-    padding: 20px;
-    flex: 4;
-  }
-  #unten {
-    background-color: #307073;
-    color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 
-  .flex-container{
-  display: flex;
-	background-color: #AFAFAF;
-  }
-}
-
- body {
- background-color: #0082D1; /* HTW-blau */
- font-size:1.2rem;
+  body{
+     background-color: #e2e6ea;
+     font-size: 1rem;
  }
+     .flex-container{
+         display: flex;
+         flex-direction: column;
+     }
+
+     #links{
+         background-color: #f5c6cb;
+     }
+
+     #rechts {
+         background-color: #005cbf;
 
 
- #oben {
-  background-color: #307073;
- 
-}
-#links{
-  background-color: #FFAEB9;
-  color: white;
-  
-}
-#rechts {
-  background-color: rgb(109, 66, 72);
-  color: white;
-  
-}
-#mitte {
-  background-color:rgb(170, 143, 125);
-  
-}
-#unten {
-  background-color: #307073;
-  color: white;
-  
-}
+     }
+
+     body{
+         background-color:dodgerblue;
+         font-size:1.2rem;
+
+     }
+
+     .flex-container{
+         display: flex;
+         flex-direction: row;
+         align-items:stretch;
+     }
+
+     #links{
+         background-color: #4e555b;
+         flex: 1 1 10%;
+     }
+
+     #oben{
+         background-color: #4e555b;
+
+
+     }
+
+     #mitte{
+         background-color: #005cbf;
+         flex: 1 1 40%;
+     }
+     #rechts{
+         background-color: #0489B1;
+         flex: 1 1 20%;
+
+     }
+
+     #unten{
+         background-color: #545b62;
+         flex-shrink:1;
+     }
+
+     @media screen and (max-width: 720px){
+         .flex-container{
+             display:flex;
+             flex-direction: column;
+
+         }
+     }
+
+
+
+
+
+
+
+
+
 
 

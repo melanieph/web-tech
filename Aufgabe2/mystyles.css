@@ -1,15 +1,15 @@
 body, html{
     height: 100%;
   }
-  
-h1{ 
-    background-color: #AFAFAF; 
-    font-family: Verdana; 
-    color: #FF5F00; 
+
+h1{
+    background-color: #AFAFAF;
+    font-family: Verdana;
+    color: #FF5F00;
     text-align: center;
 }
 
-th{ 
+th{
     background-color: #76B900;
     color: white;
     border: 1px solid black;
@@ -23,7 +23,7 @@ table{
     border-collapse: collapse;
     border: 1px solid black;
     box-shadow: 10px 10px 10px grey;
-    
+
 
 }
 
@@ -63,11 +63,3 @@ footer{
     padding-bottom: 20px;
     margin-top: 20px;
 }
-
-
-
-
-
-
-
-
